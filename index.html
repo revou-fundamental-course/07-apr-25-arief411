@@ -3,12 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arief Company</title>
+    <title>Document</title>
 
-    <!--css external-->
-    <link rel="stylesheet" href="css\style.css"
+    <link rel="stylesheet" href="css\style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="assets\logo.png" alt="PT. Agrinusa Konsultindo">
+        </div>
+
+        <nav class="nav-list">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="assets\close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="close"></a></li>
+                <li><a href="#about-me">Tentang Kami</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#service">Layanan Kami</a></li>
+                <li><a href="#contact-list">Kontak</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#about-me">Tentang Kami</a></li>
+                <li class="hideOnMobile"><a href="#gallery">Galeri</a></li>
+                <li class="hideOnMobile"><a href="#service">Layanan Kami</a></li>
+                <li class="hideOnMobile"><a href="#contact-list">Kontak</a></li>
+                <li class="hideOnMobile"><a href="#sign-up">Sign Up</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="assets\menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="menu">
+                </a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    </header>
+
+    <main class="content">
+        <section>
+        <div class="content-description">
+            <h2 id="about-me"><span class="name-input">Selamat Datang </span><span id="username-display"></span>!</h2>
+            <h1>Solusi Terpadu Untuk Peternakan Modern</h1>
+            <h2>Tingkatkan Hasil Ternak Anda dengan Pendampingan Ahli! Layanan konsultasi, analisis pakan, manajemen kandang, dan lainnya.</h2>
+            <p><strong>PT. AgroNusa Konsultindo adalah perusahaan yang bergerak di bidang konsultasi, pelatihan, dan layanan teknis peternakan. Kami hadir sebagai mitra strategis bagi peternak individu, 
+            kelompok tani, koperasi, hingga perusahaan agribisnis, untuk meningkatkan produktivitas, efisiensi, dan keberlanjutan usaha peternakan di Indonesia. 
+            Dengan tim ahli berpengalaman di bidang peternakan, nutrisi ternak, kesehatan hewan, dan teknologi pertanian, kami memberikan layanan berbasis data, riset, dan praktik terbaik.</strong></p>
+        </div>
+        </section>
+        <section>
+            <header class="gallery-content">
+                <h2 id="gallery">Galeri</h2>
+            </header>
+            <div class="gallery-image">
+                <img src="assets\gallery-image-1.jpg" class="featured-image">
+                <img src="assets\galley-image-2.webp" class="featured-image">
+                <img src="assets\gallery-image-3.jpeg" class="featured-image">
+            </div>
+        </section>
+        <section class="services-container">
+            <div class="services">
+                <header class="services-content">
+                    <h2 id="service">Layanan Kami</h2>
+                </header>
+                <div class="services-list">
+                    <div class="services-card">
+                        <img class="icon" src="assets\icon1.png" alt="icon1">
+                        <h3>Konsultasi Managemen Peternakan</h3>
+                        <ul>
+                            <li>Tata kelola kandang & sistem pemeliharaan</li>
+                            <li>Optimasi SDM dan SOP operasional</li>
+                        </ul>
+                    </div>
+
+                    <div class="services-card">
+                        <img src="assets\icon2.png" alt="icon2">
+                        <h3>Formulasi Pakan & Analisis Nutrisi</h3>
+                        <ul>
+                            <li>Rancang pakan sesuai kebutuhan spesifik ternak</li>
+                            <li>Analisis biaya dan efisiensi konversi pakan</li>
+                        </ul>
+                    </div>
+
+                    <div class="services-card">
+                        <img src="assets\icon3.png" alt="icon3">
+                        <h3>Kesehatan & Biosekuriti Ternak</h3>
+                        <ul>
+                            <li>Pemeriksaan dan onitoring kesehatan hewan</li>
+                            <li>Protokol biosekuriti dan vaksinasi</li>
+                        </ul>
+                    </div>
+
+                    <div class="services-card">
+                        <img src="assets\icon4.png" alt="icon4">
+                        <h3>Desain & Pembangunan Kandang</h3>
+                        <ul>
+                            <li>Rencana teknis kandang modern (ventilasi, sanitasi, dll)</li>
+                            <li>Pendampingan pembangunan</li>
+                        </ul>
+                    </div>
+
+                    <div class="services-card">
+                        <img src="assets\icon5.png" alt="icon5">
+                        <h3>Pelatihan & Pendampingan Peternak</h3>
+                        <ul>
+                            <li>Pelatihan onsite & online</li>
+                            <li>Pendampingan lapangan (field visit)</li>
+                        </ul>
+                    </div>
+
+                    <div class="services-card">
+                        <img src="assets\icon6.png" alt="icon6">
+                        <h3>Digitalisasi & Monitoring Ternak</h3>
+                        <ul>
+                            <li>Pemasangan sensor, sistem tracking, dan dashboard digital</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="signup">
+            <h1 id="sign-up">Sign Up</h1>
+            <h2>Daftar sebagai mitra peternak kami</h2>
+            <div class="signup-content">
+                <form id="signup-form">
+                    <label>
+                      Nama Lengkap :<br>
+                      <input type="text" id="name" name="nama" placeholder="Nama Lengkap atau Nama Kontak">
+                      <span id="error-message-name" class="error-message"></span>
+                    </label>
+                  
+                    <label>
+                      Email :<br>
+                      <input type="email" id="email" name="email" placeholder="email@domain.com">
+                      <span id="error-message-email" class="error-message"></span>
+                    </label>
+                  
+                    <label>
+                      Nomor Telepon :<br>
+                      <input type="tel" id="phone-number" name="telepon" placeholder="+62xxxxxxxxxxx">
+                      <span id="error-message-phone-number" class="error-message"></span>
+                    </label>
+                  
+                    <label>
+                      Alamat Lengkap :<br>
+                      <textarea id="message" name="address" rows="5" placeholder="Tulis alamat lengkap Anda di sini..." ></textarea>
+                      <span id="error-message-message" class="error-message"></span>
+                    </label>
+                  
+                    <button id="btn-contact" type="submit">Daftar</button>
+                </form>
+
+                <div class="result-form">
+                    <div>
+                        <h3>Terima Kasih Telah Menghubungi Kami</h3>
+                    </div>
+                
+                    <div class="sender-identity">
+                        <h4>Ringkasan :</h4>
+                        
+                        <div>
+                            <input type="text" id="sender-name" readonly placeholder="Nama Lengkap :">
+                        </div>
+
+                        <div>
+                            <input type="text" id="sender-email" readonly placeholder="Email :">
+                        </div>
+
+                        <div>
+                            <input type="text" id="sender-phone-number" readonly placeholder="Nomor Telepon :">
+                        </div>
+
+                        <div>
+                            <input type="text" id="sender-address" readonly placeholder="Alamat Lengkap :">
+                        </div>
+                    </div>
+                    <p>Kontak Anda telah berhasil kami terima. Kami akan segera menghubungi Anda.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <Header class="contact">
+                <h2 id="contact-list">Kontak</h2>
+                <ul>
+                    <a href="#"><li>Alamat: Jl. Peternakan No. 88, Bogor, Jawa Barat</li></a>
+                    <a href="#"><li>Telepon/WA: 0812-3456-7890</li></a>
+                    <a href="#"><li>Email: info@agronusakonsultindo.co.id</li></a>
+                    <a href="#"><li>Website: www.agronusakonsultindo.co.id</li></a>
+                </ul>
+            </Header>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank">
+                <img src="assets\instagram.png" alt="Instagram">
+            </a>
+            <a href="#" target="_blank">
+                <img src="assets\youtube.png" alt="LinkedIn">
+            </a>
+            <a href="#" target="_blank">
+                <img src="assets\twitter.png" alt="X">
+            </a>
+        </div>  
+        <p>&copy; 2025 PT. AgroNusa Konsultindo. All rights reserved.</p> 
+    </footer>
+
+    <script src="js\scripts.js"></script>
     
 </body>
 </html>
